@@ -2,7 +2,9 @@
 
 
 Throughout CS 470, I gained hands-on experience building a full-stack, cloud-native web application using AWS services such as API Gateway, Lambda, DynamoDB, and S3. These skills are directly applicable to my professional goals of becoming a back-end or full-stack developer specializing in scalable cloud solutions. The course challenged me to think not just in terms of functionality, but also in terms of security, maintainability, and scalability, which are essential in real-world software development.
+
 Over the span of the course, I developed a deeper understanding of asynchronous workflows, REST API design, and cloud architecture. I also learned how to write and deploy serverless functions, handle IAM roles and policies, and set up CORS and method responses in API Gateway—skills that are in high demand across cloud-centric job roles.
+
 My strengths as a developer lie in problem solving, system architecture, and adaptability. I’ve worked with both monolithic and serverless architectures, and I’m confident designing efficient, modular systems that are easy to debug and scale. I'm also comfortable working with modern development tools like AWS SDKs, Git, Node.js, and frontend frameworks. Based on these skills and experiences, I’m well prepared to take on an entry-level:
 -	Cloud Application Developer
 -	Back-End Developer
@@ -29,9 +31,5 @@ Elasticity & Pay-for-Service
 -	The pay-as-you-go model allows us to minimize costs during low usage and invest only when needed, which is ideal for startups or MVPs.
 -	As the application grows, I can define auto-scaling policies and reserve capacity selectively for cost optimization.
 
-	Pros	Cons
-Serverless	Low cost, automatic scaling, minimal ops overhead	Cold starts, limited runtime duration
-Containers	More control, persistent state, custom environments	More complex, higher ops effort
-Microservices	Easier to maintain and scale independently	More network latency, complex monitoring
 
 Overall, CS 470 has empowered me with the technical and architectural skills to not only build cloud-native applications but to also think critically about their future growth. With a foundation in serverless architecture, cost modeling, and cloud security, I’m confident in my ability to contribute meaningfully to a cloud development team, and to scale applications efficiently using best practices learned throughout this course.
