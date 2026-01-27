@@ -7,18 +7,23 @@ My strengths as a developer lie in problem solving, system architecture, and ada
 -	Cloud Application Developer
 -	Back-End Developer
 -	Full-Stack Developer
+
 Understanding how to plan for future growth in the cloud is essential to building long-term, cost-effective applications. Through this course, I’ve gained practical experience working with serverless technologies and now understand how microservices architecture can improve scalability and resilience. To ensure future growth of the application, I would adopt the following strategies in their respective areas:
+
 Handling Scale and Error Management
 -	Utilize API Gateway throttling and usage plans to prevent abuse and provide rate limits per client.
 -	Integrate CloudWatch for centralized logging, enabling real-time monitoring and automated alarms for Lambda errors.
 -	Separate logic into microservices so that only the impacted functions scale when needed.
+
 Predicting Costs
 -	AWS provides tools like the AWS Pricing Calculator and Cost Explorer, which I would use to predict expenses based on traffic and usage projections.
 -	Since Lambda charges based on execution time and number of invocations, I can create predictable cost models by analyzing current usage metrics and simulating higher loads.
+
 Containers vs. Serverless
 -	Serverless (Lambda) is more cost-efficient and scalable for spiky or unpredictable workloads. It reduces overhead because there’s no infrastructure to manage.
 -	Containers (e.g., ECS or EKS) offer more control and can be cost-predictable with consistent workloads, but require more effort to maintain and scale.
 -	For my current app, serverless is the better fit due to its low-maintenance nature and scalability. However, I would consider containers if the app grows into a more stateful or complex system that needs custom runtimes or long-lived processes.
+
 Elasticity & Pay-for-Service
 -	Elasticity ensures the app can scale on demand without over-provisioning resources—important for supporting events like traffic spikes.
 -	The pay-as-you-go model allows us to minimize costs during low usage and invest only when needed, which is ideal for startups or MVPs.
