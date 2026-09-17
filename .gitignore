@@ -1,0 +1,30 @@
+# Dependencies and build output
+node_modules/
+dist/
+tmp/
+out-tsc/
+coverage/
+.sass-cache/
+
+# Environment and logs
+.env
+.env.*
+*.log
+npm-debug.log*
+yarn-error.log
+
+# Installers and oversized media (GitHub file limit is 100MB)
+*.msi
+*.exe
+*.mp4
+*.m4a
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
