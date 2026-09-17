@@ -1,0 +1,43 @@
+X-Requested-With			'*'
+Access-Control-Allow-Headers		'Content-Type,X-Amz-Date,Authorization,X-Api-Key,x-requested-with'
+Access-Control-Allow-Origin		'*'
+Access-Control-Allow-Methods		'OPTIONS,*'
+Access-Control-Allow-Credentials	'true'
+
+
+
+
+https://zd0nk7qxl2.execute-api.us-east-1.amazonaws.com/api
+
+http://parkercs470.s3-website-us-east-1.amazonaws.com
+
+
+
+
+Hey Class,
+
+Posting here in case anybody else is encountering a similar problem or has found a solution.
+I'm definitely still learning, so I may have easily overlooked a simple step.
+It seems like some user permissions won't allow me to bring my website public, resulting in a 404 error.
+
+Here are my steps, with screenshots.
+Following the directions of the Project Guidelines, I:
+
+1. Created the proper API resources & methods (with modified the headers/mappings)
+2. Testing the API resources, missing permission 'apigateway' (though the API deployed successfully)
+3. Modified the main.ts & environment.prod.ts files
+4. Ran a successful build of the new project
+5. Successfully uploaded this build (after deleting old S3 bucket)
+
+This is where I started to encounter some more errors:
+
+6. Missing Bucket policy permission 'ValidatePolicy'
+7. Unable to change index.html to public
+8. 404 error page from S3 URL (not public?)
+9. Missing token error from API URL (no apigateway permission?)
+
+I'm continuing to troubleshoot, but restarting/rebuilding the project resulted in the same errors.
+Hoping to find a solution!
+
+Thanks,
+Dan

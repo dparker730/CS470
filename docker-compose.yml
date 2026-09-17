@@ -1,0 +1,37 @@
+services:
+  mongo:
+    container_name: lafs-db
+    image: mongo:4
+    ports:
+      - "27017:27017"
+    networks:
+      - lafs-net
+
+  api:
+    container_name: lafs-api
+    build: ./lafs-api
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=mongo
+      - DB_NAME=lafs-db
+    depends_on:
+      - mongo
+    networks:
+      - lafs-net
+
+  web:
+    container_name: lafs-web
+    build: ./lafs-web
+    restart: always
+    ports:
+      - "4200:4200"
+    depends_on:
+      - api
+    networks:
+      - lafs-net
+
+networks:
+  lafs-net:
+    driver: bridge
