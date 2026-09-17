@@ -10,6 +10,8 @@ COPY package*.json ./
 # Install the Angular CLI and other dependencies
 RUN npm install -g @angular/cli@v6-lts
 RUN npm install
+# Angular 7 sass-loader cannot parse math.div from newer bootstrap-sass/sass
+RUN npm install bootstrap-sass@3.4.1 sass@1.32.13
 
 # (Optional) If you are building for production, use the command below instead:
 # RUN npm ci --only=production
